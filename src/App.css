@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.movie-card{
+  border: 1px solid red;
+  /* width: auto; */
+  max-width: 325px;
+  padding: 18px 11px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+}
+.edit-button{
+  position: absolute;
+  top: 9px;
+  right: 12px;
+}
+.delete-button{
+  position: absolute;
+  top: 9px;
+  right: 42px;
+}
+.movie-popup{
+    /* min-height: 100vh; */
+    width: 100%;
+    position: fixed;
+    z-index: 5555555;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
+    inset: 0px;
+}
+.inner-popup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.inner-2{
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+}
